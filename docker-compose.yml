@@ -1,0 +1,12 @@
+
+version: '3'
+services: 
+  jupyter_notebook: 
+    image: jupyter/datascience-notebook
+    container_name: jupyter_notebook
+    ports: 
+      - "8888:8888"
+    volumes: 
+      - ./volumes:/home/ubuntu/volumes/
+    restart: always
+    command: start-notebook.sh --NotebookApp.token=''

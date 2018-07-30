@@ -3,7 +3,7 @@ version: '3'
 services: 
   jupyter_notebook: 
     image: jupyter/datascience-notebook
-    container_name: jupyter_notebook
+    container_name: step1_introduction
     ports: 
       - "8888:8888"
     volumes: 
